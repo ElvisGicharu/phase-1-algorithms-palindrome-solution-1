@@ -1,9 +1,27 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function reverseString(word) {
+  return word.split("").reverse().join("");
 }
+
+function isPalindrome(word) {
+  // reverse the input string
+  const reversedWord = reverseString(word);
+  // compare the reversed string to the input
+  return word === reversedWord;
+}
+
+
+
+
+
+
 
 /* 
   Add your pseudocode here
+   I need to make a isPalindrome function that returns either true or false. When
+  the input string is the same forwards and backwards, I should return true. That
+  means that if the input string is the same after I reverse it, I should return
+  true. For instance, "mom" in reverse is also "mom", and "racecar" in reverse is
+  also "racecar", so my solution should return true for these cases. 
 */
 
 /*
